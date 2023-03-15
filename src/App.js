@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-      <div className="hero-banner">CURUL DE ELECTRICIAN CONSTRUCTOR VA ÎNCEPE IN 17.03.2023</div>
+      <div className="hero-banner">CURSUL DE ELECTRICIAN CONSTRUCTOR VA ÎNCEPE IN 17.03.2023</div>
 
       <div className='container'>
         <Routes>
