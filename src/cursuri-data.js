@@ -28,7 +28,7 @@ const cursuri = [
         competente: ["Asigurarea calitatii", "Dezvoltare personala", "Lucru in echipa"]
     },
     {
-        id:'curs-electrician-constructor',
+        id: 'curs-electrician-constructor',
         title: "Electrician constructor",
         "description": "Electricianul in constructii realizeaza intreaga gama de lucrari electrice de joasa si medie tensiune in instalatii industriale, civile, de uz casnic si gospadaresc. Electricianul in constructii se ocupa cu pozarea si conexarea cablurilor de tensiune precum si a celor de comanda, control, semnalizare si a cablurilor de instrumentatie, pe trasee de cablu (paturi de cabluri, scari de cabluri, in tevi de protectie sau pozate aparent sau ingropat), montajul echipamentelor electrice parte din instalatiile mentionate mai sus, realizarea conexiunilor cablurilor si conductoarelor in doze si la echipamentele electrice, verifica si pune in functiune instalatiile electrice realizate.",
         locations: ["Brasov", "Timisoara", "Sibiu"],
@@ -42,7 +42,7 @@ const cursuri = [
         competente: ["Asigurarea calitatii", "Dezvoltare personala", "Lucru in echipa"]
     },
     {
-        id:'curs-frizer',
+        id: 'curs-frizer',
         title: "Frizer",
         "description": "Frizerul se ocupa cu oferirea de servicii clientelei, programarea clientelei, executarea tunsorii pentru barbati, executarea barbieritului, executarea ingrijirilor faciale si capilare, spalarea parului, aprovizionarea cu materiale, utilizarea materialelor si instrumentelor, igienizarea locului de munca, incasarea contravalorii serviciilor prestate.",
         locations: ["Brasov", "Timisoara", "Sibiu"],
@@ -87,7 +87,7 @@ const cursuri = [
         id: 'curs-tamplar',
         title: "Tamplar",
         "description": "Cursul se adreseazăpersoanelor ce doresc să își perfecționeze cunoștințele și să se califice în meseria de Tâmplar universal, ce presupune asamblarea elementelor masive din lemn, a elementelor și subansamblelor, prelucrarea mecanică a semifabricatelor din lemn masiv, croirea materialului lemons, finisarea și asamblarea elementelor, subansamblelor și ansamblelor, interpretarea desenului tehnic si pregatirea furnirelor estetice și a înlocuitorilor precum și a panourilor din PAL pentru furniruire, confecționarea ambalajelor pentru corpurile de mobilier. La finalul cursului veți putea produce, decora și repara mobila și alte produse din lemn.",
-        locations: ["Brasov" , "Timisoara ", "Sibiu "],
+        locations: ["Brasov", "Timisoara ", "Sibiu "],
         date: "17.03.2023",
         image: "Tamplar.jpg",
         category: "servicii",
@@ -96,6 +96,149 @@ const cursuri = [
         durata: "180",
         pret: "800",
         competente: ["Asigurarea calitatii", "Dezvoltare personala", "Lucru in echipa"]
+    },
+
+
+    ////////////////////////
+    {
+        id: 'curs-asistent-personal-al-persoanei-cu-dezabilitati ',
+        title: "Asistent personal al persoanei cu dezabilitati ",
+        description: "Asistentul personal al persoanei cu handicap este persoana care supraveghează, acordă asistenţă şi îngrijire copilului sau adultului cu handicap grav. În cadrul acestui curs persoanele înscrise vor învăța cum să implice persoanele cu handicap grav în activitatea de zi cu zi, în situații reale de viață, pentru participare la viaţa comunităţii şi exercitarea tuturor drepturilor cetăţeneşti. Totodată, vor învăța cum să acorde îngrijiri primare și să supravegheze starea de sănătate a beneficiarului.Pe lângă acestea, vor fi puse la curent cu obligațiile asistentului personal în raport cu persoana cu handicap căreia i se acordă supraveghere, asistență și îngrijire.",
+        locations: ["Targu Mures", "Timisoara", "Cluj-Napoca", "Zalau"],
+        date: "01.06.2023",
+        image: "Asistent personal al persoanei cu dezabilitati .jpeg",
+        category: "servicii",
+        openSoon: false,
+        type: "Calificare",
+        durata: "180",
+        pret: "1200",
+        competente: ["Planificarea în timp a activităţilor;", "Perfecţionarea continuă;", "Lucrul în echipă multidisciplinară;", "Acordarea îngrijirilor primare;", "Asigurarea alimentaţiei şi hrănirii beneficiarului;", "Adaptarea mediului la nevoile beneficiarului;", "Supravegherea stării de sănătate a beneficiarului;", "Comunicarea dintre asistentul personal şi persoana cu handicap;", "Asistarea activităţii şi participării persoanei cu handicap în familie şi comunitate;", "Asistarea integrării şcolare şi a educaţiei permanente;", "Asistarea integrării profesionale a persoanei cu handicap;", "Supravegherea respectării drepturilor persoanei cu handicap."]
+    },
+    {
+        id: 'curs-camerista-hotel',
+        title: "Camerista hotel",
+        "description": "Camerista de Hotel este persoana însărcinată să asigure igiena și confortul psihic ale oaspeților. Cursul de „Camerista” este interactiv și este bazat pe implicarea cursantului în prezentări, dezbateri și exemplificări. În urma acestui curs veți dobândi competențe necesare în efectuarea diferitelor servicii de curățenie în spațiile hoteliere, în camerele clienților, în îngrijirea garderobei și obiectelor personale ale clienților, precum și de tot ceea ce reprezintă serviciile de igienizare, curățare și decorare a spațiilor hoteliere.",
+        locations: ["Targu Mures", "Timisoara", "Cluj-Napoca", "Zalau"],
+        date: "01.08.2023",
+        image: "Camerista hotel.jpg",
+        category: "servicii",
+        openSoon: false,
+        type: "Perfectionare",
+        durata: "180",
+        pret: "800",
+        competente: ["Asigurarea calitatii", "Dezvoltare personala", "Lucru in echipa"]
+    },
+    {
+        id: 'curs-femeie-de-serviciu',
+        title: "Femeie de serviciu",
+        "description": "Ocupația Femeie de serviciu presupune în principal competențe legate de desfășurarea activităților de curățenie.Îndeplinește sarcini legate de curățirea și întreținerea spațiilor comune și a mobilierului hotelului (foyer, recepție, grupurile sanitare comune). Păstrează interiorul curat și ordonat, utilizând în mod rațional resursele materiale necesare menținerii igienei. Curăță podelele dure manual sau automat cu ajutorul instrumentelor specializate/cărucioarelor profesionale combinate și accesoriilor acestora/și detergenții respectivi. Tratează cu aspiratoare profesionale covoarele moi și mobilierul tapițat. Șterge cu prosoape și detergenți specializați mobilierul și echipamentul. Curăță, dezinfectează și odorizează grupurile sanitare, le deservește periodic în timpul zilei, le aprovizionează cu materiale igienice și alte produse necesare.  Șterge cu detergentul specializat suprafețele de sticlă, ușile, vitrinele și altele. La utilizarea detergenților, mașinilor și echipamentului trebuie să respecte standardele de muncă stabilite. Colectează și transportă deșeurile până la recipientele de depozitare. Curăță încăperile de bucătărie și ajută personalul de la bucătărie.",
+        locations: ["Targu Mures", "Timisoara", "Cluj-Napoca", "Zalau"],
+        date: "01.09.2023",
+        image: "Femeie de serviciu.jpg",
+        category: "servicii",
+        openSoon: false,
+        type: "Specializare",
+        durata: "180",
+        pret: "800",
+        competente: ["Asigurarea calitatii", "Dezvoltare personala", "Lucru in echipa"]
+    },
+    {
+        id: 'curs-fotograf',
+        title: "Fotograf",
+        "description": "Dezvoltarea de abilităţi şi competenţe pentru a realiza fotografii: portret, evenimente, produse, reportaje, reclame, publicitate punându-se accent pe comunicarea verbală şi nonverbală precum şi pe comunicarea în mediul virtual (web, blog, retele de socializare).",
+        locations: ["Targu Mures", "Timisoara", "Cluj-Napoca", "Zalau"],
+        date: "01.07.2023",
+        image: "Fotograf.jpg",
+        category: "servicii",
+        openSoon: false,
+        type: "Specializare",
+        durata: "180",
+        pret: "800",
+        competente: ["Asigurarea calitatii", "Dezvoltare personala", "Lucru in echipa"]
+    },
+    {
+        id: 'curs-frigotehnist',
+        title: "Frigotehnist",
+        "description": "In urma absolvirii examenului final, cursantii vor intra in posesia certificatelor de Calificare pentru ocupatia de “Frigotehnist ” si a suplimentelor descriptive care atesta competente dobandite in urma cursului.",
+        locations: ["Targu Mures", "Timisoara", "Cluj-Napoca", "Zalau"],
+        date: "01.10.2023",
+        image: "Frigotehnist.jpg",
+        category: "servicii",
+        openSoon: false,
+        type: "Calificare",
+        durata: "180",
+        pret: "800",
+        competente: ["Asigurarea calitatii", "Dezvoltare personala", "Lucru in echipa"]
+    },
+    {
+        id: 'curs-instalator-instalații-tehnico-sanitare-și-gaze',
+        title: "Instalator instalații tehnico-sanitare și gaze",
+        "description": "Un instalator de instalații tehnico-sanitare și de gaze este un muncitor calificat care se ocupă cu montarea, întreținerea și repararea instalațiilor de gaze și a celor sanitare, a cărui activitate se desfășoară de regulă în cadrul companiilor din domeniul construcțiilor.",
+        locations: ["Targu Mures", "Timisoara", "Cluj-Napoca", "Zalau"],
+        date: "01.08.2023",
+        image: "Instalator instalații tehnico-sanitare și gaze.jpg",
+        category: "servicii",
+        openSoon: false,
+        type: "Perfectionare",
+        durata: "180",
+        pret: "800",
+        competente: ["Asigurarea calitatii", "Dezvoltare personala", "Lucru in echipa"]
+    },
+    {
+        id: 'curs-legumicultor',
+        title: "Legumicultor",
+        "description": "Una dintre cele mai vechi ocupații ale omului – Legumicultura – are astăzi nevoie de o nouă abordare și noi cunoștințe pentru a se adresa cu profesionalism nevoilor de consum din ce în ce mai ridicate. Cursul propus de societatea noastră este esențial, întrucât vizează obținerea unor competențe în prelucrarea solului, înfiinţarea culturilor, realizarea producţiei şi a valorificării ei în condiţii cât mai profitabile. De asemenea, nu vor fi omise nici noțiuni legate de particularităţile biologice ale diferitelor specii, soiuri şi hibrizi, precum şi relaţiile dintre plante şi factorii mediului înconjurător. Dorim să vă creăm condițiile perfecte pentru a dobândi calităţi de bun manager în domeniu.",
+        locations: ["Targu Mures", "Timisoara", "Cluj-Napoca", "Zalau"],
+        date: "01.10.2023",
+        image: "Legumicultor.jpg",
+        category: "servicii",
+        openSoon: false,
+        type: "Calificare",
+        durata: "180",
+        pret: "800",
+        competente: ["Stabilirea amplasamentului şi a structurii culturilor legumicole;", "Aprovizionarea cu materii prime şi materiale (seminţe, material săditor, îngrăşăminte, pesticide);", "Producerea materialului săditor;", "Pregătirea terenului pentru înfiinţarea culturilor legumicole de câmp;", "Înfiinţarea culturilor legumicole de câmp;", "Executarea lucrărilor de întreţinere a culturilor legumicole;", "Asigurarea recoltării produselor legumicole şi desfiinţarea culturii;", "Stocarea şi depozitarea producţiei legumicole pentru valorificare şi consum;", "Comunicarea la locul de muncă;", "Munca în echipă;"]
+    },
+    {
+        id: 'curs-lucrator-comercial',
+        title: "Lucrator Comercial",
+        "description": "Un lucrător comercial este adesea întâlnit în supermarket-uri și hipermarket-uri și gestionează toate aspectele care țin de raionul de care este responsabil, de la inventarierea produselor, aprovizionarea rafturilor după cum este necesar, primirea mărfii și poziționarea corespunzătoare a produselor, atât în depozit, cât și la raft. Acest job poate necesita bune abilități de comunicare și relaționare cu clienții, mai ales dacă jobul presupune ture în timpul programului de lucru cu clienții.Totodată, jobul de lucrător comercial poate presupune, în unele magazine, ore de muncă neconvenționale(la magazinele deschise toată noaptea sau chiar aprovizionarea peste noapte, când magazinul este închis.",
+        locations: ["Targu Mures", "Timisoara", "Cluj-Napoca", "Zalau"],
+        date: "01.10.2023",
+        image: "Lucrator Comercial.jpg",
+        category: "servicii",
+        openSoon: false,
+        type: "Calificare",
+        durata: "180",
+        pret: "800",
+        competente: ["Asigurarea calitatii", "Dezvoltare personala", "Lucru in echipa"]
+    },
+    {
+        id: 'curs-machior',
+        title: "Machior",
+        "description": "Un make-up artist priceput ar putea lucra astăzi într-un salon de frumuseţe, într-un teatru sau o televiziune, dar şi ca freelancer. Câştigurile financiare depind de mulţi factori, în special de talentul şi muncă investită zilnic în construirea unei astfel de cariere. Meseria de make-up artist nu este aşa simplă precum pare la prima vedere pentru că, pe lângă îndemânare, presupune simţ artistic, instruire prin cursuri specializate şi perfecţionare şi multă muncă. Un make-up artist profesionist poate câştiga chiar şi 1.000 EUR pe zi, însă până la acest punct, investiţia în produse şi cursuri de specializare şi acumularea de experienţă pot dura de la câteva luni până la ani.",
+        locations: ["Targu Mures", "Timisoara", "Cluj-Napoca", "Zalau"],
+        date: "01.10.2023",
+        image: "Machior.jpg",
+        category: "servicii",
+        openSoon: false,
+        type: "Calificare",
+        durata: "180",
+        pret: "800",
+        competente: ["Comunicarea interpersonală", "Munca în echipă", "Aplicarea normelor de protecţie a muncii şi PSI", "Aplicarea normelor igienico-sanitare la locul de muncă", "Planificarea activităţilor zilnice", "Menţinerea relaţiilor cu clienţii", "Dezvoltarea profesională", "Promovarea produselor şi serviciilor", "Gestionarea resurselor materiale", "Executarea operaţiilor pregătitoare pentru machiaj", "Modificarea caracteristicilor genelor şi sprâncenelor", "Executarea machiajelor convenţionale", "Executarea machiajului special", "Proiectarea machiajului transformaţional", "Proiectarea pieselor pentru machiajul transformaţional", "Executarea pieselor pentru machiajul transformaţional"]
+    },
+    {
+        id: 'curs-zidar-pietrar-tencuitor',
+        title: "Zidar pietrar tencuitor",
+        "description": "Zidarul, pietrar, tencuitor execută elemente de construcţii (pereţi portanţi, neportanţi, de compartimentare, stâlpi, arce, bolţi, cupole, canale, cămine, etc.) din zidării de complexităţi diferite folosind pietre naturale sau artificiale confecţionate din materiale arse (cărămizi, blocuri ceramice etc.) sau nearse (formate din amestecul unuia sau a mai multor materiale de bază cu un liant) sub formă de monolit sau de blocuri, prin aşezarea lor în rânduri orizontale şi îmbinarea lor după anumite reguli, folosind un liant (mortar) pentru legarea acestora, verifică şi corectează defectele de execuţie. Zidarul, pietrar, tencuitor aprovizionează locul de muncă cu materiale, scule, unelte, dispozitive şi utilaje necesare, pregăteşte sculele, dispozitivele şi utilajele pentru lucru, prepară mortarele pentru zidării şi tencuieli. De asemenea, zidarul, pietrar, tencuitor, pregăteşte suprafeţele elementelor de construcţii din zidărie de cărămidă sau beton, în vederea tencuirii(verifică abaterile, curăţă, trasează, umezeşte suprafeţele etc.) şi execută tencuirea elementelor de construcţii prin aplicarea succesivă a mai multor straturi de mortar cu caracteristici fizice şi tehnice specifice care să asigure calitatea necesară, o protecţie bună şi un finisaj corespunzător scopului pentru care această lucrare se realizează. Zidarul, pietrar, tencuitor execută de obicei construcţii şi elemente de construcţii noi dar posedă şi competenţele necesare pentru a interveni la construcţiile vechi, fie pentru demolarea lor în cazul când nu se mai pot folosi fără risc, fie pentru reabilitarea, modernizarea şi aducerea lor la o stare de funcţionare bună, prin lucrări de reparaţii la zidării şi tencuieli.El este capabil să evalueze calitatea şi eficienţa lucrării din punct de vedere tehnic şi economic. Zidarul, pietrar, tencuitor utilizează informaţiile din planurile şi detaliile de execuţie şi efectuează calcule matematice simple care se referă la lucrările de zidării şi tencuieli(necesar de materiale, volume de zidării şi suprafeţe de pereţi tencuiţi etc.), se integrează în cadrul echipei, îşi identifică sarcinile şi îşi planifică activităţile zilnice şi poate comunica corect cu toate persoanele implicate direct în procesul de muncă sau care au legătură cu acesta, foloseşte toate posibilităţile pentru dezvoltarea sa personală şi profesională. Zidarul, pietrar, tencuitor este capabil să identifice şi să evite riscurile de accidentare şi să intervină corect în caz de accident.",
+        locations: ["Targu Mures", "Timisoara", "Cluj-Napoca", "Zalau"],
+        date: "01.10.2023",
+        image: "Zidar pietrar tencuitor.jpg",
+        category: "servicii",
+        openSoon: false,
+        type: "Calificare",
+        durata: "180",
+        pret: "800",
+        competente: ["Executarea lucrărilor de demolare a zidăriei", "Prepararea mortarelor pentru zidării şi tencuieli", "Executarea zidăriilor simple", "Executarea zidăriilor din piatră naturală", "Executarea zidăriilor de complexitate medie", "Executarea zidăriilor de mare complexitate", "Executarea tencuielilor simple", "Executarea tencuielilor decorative", "Executarea tencuielilor de mare complexitate", "Executarea lucrărilor de reabilitare termică a clădirilor de locuit"]
     }
 
 ]

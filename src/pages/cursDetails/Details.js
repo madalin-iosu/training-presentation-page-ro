@@ -3,23 +3,31 @@ import cursuriData from "../../cursuri-data.js";
 import "./Details.css";
 import Contact from "../../components/contact/Contact"
 import Breadcrumbs from "../../components/breadcrumbs/Breadcrumbs.js";
+import { useRef, useEffect } from "react";
 
 
 const Details = () => {
     const { id } = useParams()
     const curs = cursuriData.find((curs) => curs.id === id)
     const { title, image, locations, durata, type, pret, competente } = curs
+    const scollToRef = useRef();
 
     const locationsStr = locations.toString()
     const locationsSpace = locationsStr.replace(/,/g, ", ");
 
-    console.log(competente)
+    useEffect(() => {
+        // 👇️ scroll to top on page load
+        window.scrollTo({ top: 0, left: 0 });
+    }, []);
 
     const competenteList = competente.map(competenta =>
         <ul className="CompetenteList">
             <li key={id}>{competenta}</li>
         </ul>
     )
+
+
+
 
     return (
         <div className="DetailsPage">
@@ -63,7 +71,7 @@ const Details = () => {
                     </div>
 
                     <div>
-                        <button className="hero-button DetailsButton">Vreau sa particip</button>
+                        <button onClick={() => scollToRef.current.scrollIntoView({ behavior: "smooth" })} className="hero-button DetailsButton">Vreau sa particip</button>
                     </div>
 
                 </div>
@@ -73,7 +81,7 @@ const Details = () => {
                 </div>
 
             </section>
-            
+
             <section className="OtherInfo">
                 <div>
                     <h3 className="OtherInfoTitle">
@@ -116,44 +124,45 @@ const Details = () => {
                 <div className="TestimonialCardSection">
                     <div className="TestimonialCard">
                         <div className="TestimonialCardTitle">
-                            <img src={require("../../images/testimoniale/testimonial1.png")} alt="testimonial"/>
+                            <img src={require("../../images/testimoniale/testimonial1.png")} alt="testimonial" />
                             <div>
-                            <h4>Andrei Constatinescovici</h4>
-                            <p>Cursant</p>
+                                <h4>Andrei Constatinescovici</h4>
+                                <p>Cursant</p>
                             </div>
-                            
-                        
+
+
                         </div>
                         <p>Recomand tuturor celor care isi doresc sa se califice sa urmeze cursurile Advance.</p>
                     </div>
                     <div className="TestimonialCard">
                         <div className="TestimonialCardTitle">
-                            <img src={require("../../images/testimoniale/testimonial2.png")} alt="testimonial"/>
+                            <img src={require("../../images/testimoniale/testimonial2.png")} alt="testimonial" />
                             <div>
-                            <h4>Andrei Constatinescovici</h4>
-                            <p>Cursant</p>
+                                <h4>Andrei Constatinescovici</h4>
+                                <p>Cursant</p>
                             </div>
-                            
-                        
+
+
                         </div>
                         <p>Recomand tuturor celor care isi doresc sa se califice sa urmeze cursurile Advance.</p>
                     </div>
                     <div className="TestimonialCard">
                         <div className="TestimonialCardTitle">
-                            <img src={require("../../images/testimoniale/testimonial3.png")} alt="testimonial"/>
+                            <img src={require("../../images/testimoniale/testimonial3.png")} alt="testimonial" />
                             <div>
-                            <h4>Andrei Constatinescovici</h4>
-                            <p>Cursant</p>
+                                <h4>Andrei Constatinescovici</h4>
+                                <p>Cursant</p>
                             </div>
-                            
-                        
+
+
                         </div>
                         <p>Recomand tuturor celor care isi doresc sa se califice sa urmeze cursurile Advance.</p>
                     </div>
-                    
-           
+
+
                 </div>
             </section>
+            <div ref={scollToRef}></div>
             <Contact />
         </div>
     )

@@ -4,7 +4,7 @@ import cursuriData from "../../cursuri-data.js";
 import { useRef, useState } from "react";
 
 const News = () => {
-    
+
     const filteredByDateSoon = cursuriData.filter(curs => curs.openSoon)
     const [cursCards, setCursCards] = useState(filteredByDateSoon);
     const scrollRef = useRef();
@@ -25,16 +25,17 @@ const News = () => {
     const renderBadges = () => {
         const badges = new Set()
         cursuriData.forEach(curs => {
-            badges.add(curs.type) })
+            badges.add(curs.type)
+        })
 
         return [...Array.from(badges), 'Toate'].map(
             type => <button key={type}
-                            id={type}
-                            className="category"
-                            onClick={() => handleFilterCards(type)  }
-                            >
-                        {type}
-                    </button>
+                id={type}
+                className="category"
+                onClick={() => handleFilterCards(type)}
+            >
+                {type}
+            </button>
 
 
         )
@@ -53,7 +54,7 @@ const News = () => {
 
     return (
         <section className="news-section">
-            <h1 className="news-title">Cursuri care incep in curand</h1>
+            <h1 className="news-title">Cursuri care încep în curând</h1>
             <div className="news-categories">
 
                 {renderBadges()}

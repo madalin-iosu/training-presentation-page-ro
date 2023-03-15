@@ -14,12 +14,12 @@ function App() {
 
   return (
     <>
-      <div className="hero-banner">ANUNT DE MAXIMA IMPORTANTA DESPRE CEVA CE SE INTAMPLA IN MOMENTUL DE FATA, TREBUIE SA FIE RELEVANT</div>
+      <div className="hero-banner">CURUL DE ELECTRICIAN CONSTRUCTOR VA ÎNCEPE IN 17.03.2023</div>
 
       <div className='container'>
         <Routes>
           <Route path='/' element={<Rootlayout />}>
-            <Route index element={<Home />}/>
+            <Route index element={<Home />} />
             <Route path="/cursuri" element={<Cursuri />} />
             <Route path="/despre-noi" element={<Despre />} />
             <Route path="/servicii" element={<Servicii />} />
