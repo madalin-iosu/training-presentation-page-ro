@@ -4,7 +4,7 @@
 }
 
 .hero-banner {
-  background-color: #17255A;
+  background-color: var(--blueMain);
   color: #EFF1F3;
   margin: 0;
   text-align: center;
@@ -13,8 +13,12 @@
   cursor: pointer;
 }
 
+a:link {
+  text-decoration: none;
+}
+
 h1,
 h2,
 h3 {
-  color: #17255A;
+  color: var(--blueMain);
 }
