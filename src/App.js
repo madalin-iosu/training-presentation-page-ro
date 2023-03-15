@@ -3,7 +3,7 @@ import Cursuri from './pages/Cursuri';
 import Despre from './pages/despreNoi/Despre';
 import Home from './pages/Home';
 import Servicii from './pages/Servicii';
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Link } from "react-router-dom";
 import Details from './pages/cursDetails/Details';
 import Rootlayout from './layouts/Rootlayout';
 import NotFound from './pages/NotFound';
@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-      <div className="hero-banner">CURSUL DE ELECTRICIAN CONSTRUCTOR VA ÎNCEPE IN 17.03.2023</div>
+      <Link to="/cursuri/curs-agent-de-securitate"><div className="hero-banner">CURSUL DE ELECTRICIAN CONSTRUCTOR VA ÎNCEPE IN 17.03.2023</div></Link>
 
       <div className='container'>
         <Routes>
